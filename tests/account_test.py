@@ -33,7 +33,7 @@ class TestAccount(unittest.TestCase):
         self.account_1.add_profile(self.profile_1)
         self.account_1.add_profile(self.profile_2)
         self.account_1.add_profile(profile_3)
-        self.assertEqual([self.profile_1, self.profile_2, profile_3], self.account_1.list_all_profiles())
+        self.assertEqual([self.profile_1, self.profile_2, profile_3], self.account_1.get_profiles())
 
 
         

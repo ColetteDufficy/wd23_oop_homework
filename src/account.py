@@ -13,5 +13,5 @@ class Account:
     def remove_profile(self, profile):
         self.profiles_list.remove(profile)
         
-    def list_all_profiles(self):
+    def get_profiles(self):
         return self.profiles_list
