@@ -30,6 +30,7 @@ class TestProfile(unittest.TestCase):
     def test_list_of_favourite_movies(self):
         self.profile_1.add_to_favourite(self.movie_2)
         self.assertEqual([self.movie_2], self.profile_1.get_list_of_favourites())
+# can i return a list of the movie names????? ***************
 
 
     
