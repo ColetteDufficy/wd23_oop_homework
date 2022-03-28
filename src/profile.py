@@ -13,9 +13,21 @@ class Profile:
         
     def remove_from_favourite(self, movie):
         self.favourites.remove(movie)
+        
+    # # if i wanted to mremove by title
+    # def remove_from_favourite(self, title):
+    #     for movie in self.favourites:
+    #         if movie.title == title:
+    #             self.favourites.remove(title)
+
     
     def get_list_of_favourites(self):
+        # write some code that formats the output
+        # write some code that filetrs absed on something
+        # lets casually add recommendations and ads into this
         return self.favourites
+    
+    
     
     # def get_list_of_favourite_titles(self, movie):
     #     return self.favourites(movie.title)

@@ -17,6 +17,8 @@ class TestProfile(unittest.TestCase):
         self.profile_1.add_to_favourite(self.movie_1)
         self.profile_1.add_to_favourite(self.movie_2)
         self.assertEqual([self.movie_1, self.movie_2], self.profile_1.get_list_of_favourites())   #this returns a list of movies
+        # # alternative code:
+        # self.assertEqual([self.movie_1, self.movie_2], self.profile_1.favourites)   #this returns a list of movies
         self.assertEqual(2, self.profile_1.num_of_favourite_movies())   #this returns the number of movies in the 'favourites' list
          
 
@@ -25,7 +27,9 @@ class TestProfile(unittest.TestCase):
         self.profile_1.add_to_favourite(self.movie_1)
         self.profile_1.add_to_favourite(self.movie_2)
         self.profile_1.remove_from_favourite(self.movie_1)
-        self.assertEqual(1, self.profile_1.num_of_favourite_movies())
+        self.assertEqual(1, self.profile_1.num_of_favourite_movies()) #this returns the number of movies in the 'favourites' list
+        self.assertEqual([self.movie_2], self.profile_1.favourites)   #this returns a list of movies
+
         
  
     # Test a Profile can return a list of Favourites
